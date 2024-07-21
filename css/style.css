@@ -331,3 +331,72 @@ section {
 
     padding-top: 0;
 }
+
+.flex {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+
+}
+
+
+
+.indirizzi-utili {
+    background-color: black;
+    height: 200px;
+    color: white;
+}
+
+
+.indirizzi-utili>li {
+
+    padding: 5px;
+}
+
+
+.micro-container {
+
+    max-width: 980px;
+    margin: 0 auto;
+
+    display: flex;
+
+    gap: 20px;
+}
+
+
+.micro-container2 {
+    max-width: 980px;
+    margin: 0 auto;
+
+
+}
+
+.column {
+
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.rettangolo {
+
+    display: flex;
+    background-color: skyblue;
+    justify-content: center;
+
+}
+
+.tondo {
+
+    background-color: red;
+
+
+    height: 150px;
+
+    width: 50px;
+}
