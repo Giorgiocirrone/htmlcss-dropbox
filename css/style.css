@@ -9,8 +9,61 @@
 /*Generics*/
 
 body {
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
+
+
+
+ul {
+
+    list-style-type: none
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn {
+
+    padding: 10px 15px;
+
+
+}
+
+
+
+.btn.btn-small {
+
+
+    padding: 5px 10px;
+
+}
+
+
+
+
+.btn.btn-primary {
+    /*per via del fatto che il codice deve essere rivisitato ogni volta potresti fare il :root */
+
+    color: #fff;
+    background-color: #0061ff;
+
+
+}
+
+
+
+
+
+
+
+
 
 /*Utils*/
 
@@ -19,4 +72,109 @@ body {
 
     max-width: 1200px;
     margin: 0 auto;
+}
+
+h1 {
+    font-size: 4rem;
+
+    font-weight: 600;
+
+    margin-bottom: 55px;
+    /*cosi lo stacchiamo subito dopo*/
+
+}
+
+/*intestazione principale */
+
+
+#main-header {
+    /* decidi se mettere fixede  top left right 0 */
+
+    z-index: 1;
+    /*lo stacco dal flusso */
+
+    height: 100px;
+
+    background-color: #fff;
+    /*altrimenti se scorri è trasparente */
+
+    box-shadow: 0 1px 3px #dedede;
+    /*ricordati di rivedere questo colore */
+
+    position: sticky;
+    /*ricorda che si attacca al genitore */
+    /*con fixed metti le coordinate per dopo e nel body metti il padding o nono funziona */
+
+    top: 0;
+    /*così facendo lo distribuiamo su tutto il contenuto con sticky*/
+    left: 0;
+
+    display: flex;
+    /*non centrare qui le liste!!!!!!!!!!!!!!!!!!*/
+
+
+    justify-content: space-between;
+    /*non mettere aroun dopo */
+
+    align-items: center;
+    /*centra i due nav  centratura verticale delle nav bar */
+
+    padding: 20px;
+    margin-bottom: 0px;
+
+
+
+}
+
+
+/*tutte le liste figlie */
+#main-header ul {
+
+
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+
+}
+
+
+#dropbox {
+
+    background-color: #B4D0E7;
+
+    /*inizialmente metti una min height per vederlo, appena poni l'immagine stacca min*/
+
+    min-height: 650px;
+
+
+
+}
+
+
+/*impostazione layout jubotron*/
+
+.row {
+    display: flex;
+
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+
+
+}
+
+/*colonna di dx*/
+
+.col-dx {
+
+    flex-basis: 70%
+}
+
+/*colonna di sx mettimao flex basis perchè abbiamo utilizzato flex  */
+
+.col-sx {
+
+    flex-basis: 30%
 }
