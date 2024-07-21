@@ -240,7 +240,6 @@ section {
 
 .quadrati .quadrato {
 
-    border: 2px dashed red;
 
     width: calc(100vw /3);
     height: calc(100vw/3);
@@ -258,7 +257,7 @@ section {
     width: 50%;
     height: 50%;
 
-    border: 1px dashed purple;
+
 
 
     display: flex;
@@ -272,4 +271,63 @@ section {
 .micro-quad img {
 
     width: 55%;
+}
+
+
+
+/*colori riutilizzabili */
+
+.green {
+
+    background-color: greenyellow;
+}
+
+.sred {
+
+    background-color: rgb(76, 5, 5);
+}
+
+.red {
+    background-color: red;
+}
+
+
+.sky {
+
+    background-color: #2365cf;
+}
+
+.smallgrey {
+
+    background-color: rgb(97, 86, 86);
+}
+
+.blue {
+
+    background-color: blue;
+}
+
+.yellow {
+
+    background-color: yellow;
+}
+
+
+.azure {
+
+    background-color: rgb(123, 164, 192);
+}
+
+
+
+
+
+#partner {
+    padding-bottom: 0;
+}
+
+#free {
+
+
+    padding-top: 0;
 }
