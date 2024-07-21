@@ -32,6 +32,8 @@ img {
 .btn {
 
     padding: 10px 15px;
+    display: inline-block;
+    /*altimenti si attaccano*/
 
 
 }
@@ -57,10 +59,13 @@ img {
 
 }
 
+/*spaziatura */
 
 
+.margin-b30 {
+    margin-bottom: 30px;
 
-
+}
 
 
 
@@ -79,13 +84,21 @@ h1 {
 
     font-weight: 600;
 
-    margin-bottom: 55px;
+    margin-bottom: 41px;
     /*cosi lo stacchiamo subito dopo*/
 
 }
 
 /*intestazione principale */
+h2 {
 
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+section {
+    padding: 60px;
+}
 
 #main-header {
     /* decidi se mettere fixede  top left right 0 */
@@ -141,11 +154,14 @@ h1 {
 
 #dropbox {
 
+
     background-color: #B4D0E7;
 
     /*inizialmente metti una min height per vederlo, appena poni l'immagine stacca min*/
 
-    min-height: 650px;
+    height: 625px;
+    margin-bottom: 80px;
+
 
 
 
@@ -177,4 +193,83 @@ h1 {
 .col-sx {
 
     flex-basis: 30%
+}
+
+/*ai paragrafi con classe margin-b30 diamo questa classe in modo tale che siano spaziati perchè sono inline e hanno un padding che gli altri elementi non di prendono */
+
+
+
+
+/*sezione prezzi */
+
+
+.small-container {
+
+
+    margin: 0 auto;
+
+    max-width: 1000px;
+
+}
+
+.row.piani-acquisto {
+
+    gap: 40px;
+}
+
+.col {
+
+    flex-basis: calc(100%/3 -80px / 3);
+    min-height: 80px;
+    flex-grow: 1;
+    /*si allarga se può*/
+
+    border: 2px dashed;
+}
+
+
+
+
+.quadrati {
+
+
+    display: flex;
+
+    background-color: #fff;
+}
+
+.quadrati .quadrato {
+
+    border: 2px dashed red;
+
+    width: calc(100vw /3);
+    height: calc(100vw/3);
+
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+
+.quadrato .micro-quad {
+
+
+    width: 50%;
+    height: 50%;
+
+    border: 1px dashed purple;
+
+
+    display: flex;
+    align-items: center;
+    /*centratura quadrato nell'asse secondario*/
+    justify-content: center;
+
+}
+
+
+.micro-quad img {
+
+    width: 55%;
 }

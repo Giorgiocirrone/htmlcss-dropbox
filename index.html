@@ -10,77 +10,121 @@
 
 <body>
 
-    <!-- ci sono due header uno principale ed uno secondario  -->
 
-    <!--  h principale con id per distinguerlo -->
+
+
+
+    <!-- ci sono due header uno principale ed uno secondario  -->
+    <!--  per il fixed , altrimenti potevamo avere due header -->
+
+    <!--  h principale con id per distinguerlo  -->
     <header id="main-header">
-        <div class="navbar-l">
-            <ul id="left">
-                <li><a href="#"><img src="image/img/logo-small.png" alt=""></a></li>
-                <li> perchè Dropbox</li>
+        <nav class="navbar-left">
+            <ul>
+                <li><a href="#"><img src="image/img/logo-small.png" alt="Logo"></a></li>
+                <li> perchè Dropbox</li> <!-- correggerre mettere attributo   -->
                 <li>funzioni</li>
                 <li>piani e prezzi </li>
             </ul>
-        </div>
-        <div class="navbar-r">
+        </nav>
 
-            <ul id="right">
+        <nav class="navbar-right"> <!-- mai mettere i div per creare una cosa del genere   -->
+
+            <ul>
                 <li>supporto</li>
                 <li>contatta l'ufficio verndite </li>
-                <li class="btn">accedi </li>
-                <li>inizia</li>
+                <li>accedi </li>
+                <li class="btn btn-small btn-primary">inizia</li>
             </ul>
-        </div>
+        </nav>
     </header>
 
 
     <main>
 
-        <section class="presentazione ">
+        <section id="dropbox">
 
-            <div class="container ">
+            <div class="container">
 
-                <h1>Tutto ciò che ti serve per il lavoro , in unico posto </h1>
+                <h1> Tutto ciò che ti serve per il lavoro , in unico posto</h1>
 
+                <div class="row">
 
-                <div class=" row">
-                    <!-- 35-->
-                    <div class="colonna-l">
+                    <!--minore larghezza-->
+                    <div class="col-sx">
 
-                        <p>Finalmente i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto.
-                            Dropbox Business è più di uno spazio di archiviazione sicuro:
-                            è un modo intelligente e integrato per ottimizare il flusso di lavoro esistente.
+                        <p class="margin-b30">
+                            Finalmente tutti i tuoi strumenti , contenuti e collaboratori
+                            sono accessibili dallo stesso posto .
+                            Dropbox Business è più di uno spazio di archiviazione sicuro :
+                            è un modo intelligente e integreto per ottimizzare il flusso di lavoro esistente.
                         </p>
+                        <a href="#" class="btn btn-primary margin-b30"> Inizia la tua prova gratuita</a>
 
-                        <a class="btn " href="#"> Inizia la tua prova gratuita</a>
-
-                        <p> annulla in qualsiasi momento </p>
-                    </div>
-                    <!-- 65 -->
-                    <div class="colonna-r ">
-
-                        <img src="image/img/jumbo.png" alt="">
+                        <p class="margin-b30">Annulla in qualsiasi momento </p>
+                        <!-- ricordati che qui bisogna mettere un iconla dopo  -->
 
                     </div>
 
 
+                    <!-- maggiore larghezza nota bene css -->
 
+
+                    <div class="col-dx">
+
+                        <img src="image/img/jumbo.png" alt="Dropbox-j">
+                    </div>
                 </div>
 
             </div>
 
 
+        </section>
 
+        <section class="prezzi">
 
+            <div class="small-container">
+                <h2>Trova il piano acquisti che fa per te </h2>
+
+                <div class=" row piani-acquisto">
+
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+
+                </div>
+            </div>
         </section>
 
 
-        <section class="">
+
+        <!--sezione partener dropobox  -->
+
+        <section id="partner">
+
+            <div class="quadrati">
+
+                <div class="quadrato"><!--  -->
+                    <div class="micro-quad"></div>
+                    <div class="micro-quad"></div>
+                    <div class="micro-quad"></div>
+                    <div class="micro-quad"></div>
+                </div>
+                <div class="quadrato"></div><!--  -->
+
+                <div class="quadrato"><!--  -->
+                    <div class="micro-quad"></div>
+                    <div class="micro-quad"></div>
+                    <div class="micro-quad"></div>
+                    <div class="micro-quad"></div>
+                </div>
 
 
-            <div class="row">
 
-                <div class="pubblicità"></div>
+
+
+
 
 
 
@@ -88,9 +132,29 @@
             </div>
 
 
+
+
+
+
+
+
+
         </section>
 
+
+
+
+
+
+
+
     </main>
+
+
+
+
+
+
 
 </body>
 
